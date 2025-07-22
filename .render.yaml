@@ -5,6 +5,7 @@ services:
     pythonVersion: 3.10
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn CTFd:create_app()
+    runtime: python-3.10
     envVars:
       - key: FLASK_ENV
         value: production
