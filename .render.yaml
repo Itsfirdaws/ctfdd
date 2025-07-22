@@ -2,6 +2,7 @@ services:
   - type: web
     name: ctfd-app
     env: python
+    pythonVersion: 3.10
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn CTFd:create_app()
     envVars:
